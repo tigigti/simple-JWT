@@ -32,6 +32,7 @@ app.post("/api/posts",middleware.verifyToken,(req,res) => {
 
 app.post("/api/login",(req,res) => {
     // Mock User
+    
     const user = {
         id: 1,
         username: "Joseph",
@@ -40,7 +41,7 @@ app.post("/api/login",(req,res) => {
     
     // Anstatt nur den User als json zurtückzuliefern, wird er in einem jwt initialisiert
     // und zusammen mit einem key als Antwort gesendet
-    jwt.sign({user},"secretkey",(err,token) => {
+    jwt.sign({user: user},"secretkey",(err,token) => {
         res.json({
             token
             // Das Objekt sieht so aus:

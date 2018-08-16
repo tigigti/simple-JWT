@@ -1,4 +1,4 @@
-<h1>Ablauf der Authentifiezierung</h1>
+<h1>Ablauf der Authentifizierung</h1>
 <h2>1. Login und Token erhalten</h2>
 <p>
 Eine Abfrage wird vom Frontend aus gesendet und man erhält als Antwort ein mit einem Geheimwort codiertes Token. Das Token wird in einer Variablen gespeichert.
